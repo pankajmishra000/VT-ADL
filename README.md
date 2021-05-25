@@ -1,7 +1,48 @@
-# VT-ADL
-A Vision Transformer Network for Image Anomaly Detection and Localization
+# VT-ADL : A Vision Transformer Network for Image Anomaly Detection and Localization
+*Authors - Pankaj Mishra, Ricardo Verk, Daniele Fornasier, Claudio Piciarelli, Gian Luca Foresti*
 
+**Abstract**- *We present a transformer-based image anomaly detection and localization network. Our proposed model is
+a combination of a reconstruction-based approach and patch embedding. The use of transformer networks helps preserving
+the spatial information of the embedded patches, which is later processed by a Gaussian mixture density network to localize the
+anomalous areas. In addition, we also publish BTAD, a real-world industrial anomaly dataset. Our results are compared with other
+state-of-the-art algorithms using publicly available datasets like MNIST and MVTec.*
 
-## Code will me made available on or before 25-May-2021, 12:00 CET.
+# Network
+The network is inspired from the [Vision Transformer](https://openreview.net/pdf?id=YicbFdNTTy). It adapt the trasnformer network
+for the image anomaly detection and localization.
+<img src="image/Ano-VT.png">
 
-Write to - mishra.pankaj@spes.uniud.it
+# Novel Dataset
+Dataset contains RGB images of three industrial products – [Scan Below to download](http://avires.dimi.uniud.it/papers/btad/btad.zip)
+<img src="image/btad-QR.png">
+
+* Product 1 :  Contains 400 images of 1600x1600 pixels
+* Product 2 :  Contains 1000 images of 600x600 pixels
+* Product 3 :  Contains 399 images of  800x600 pixels
+
+# Results
+* **MVTec Dataset** - *Real world anomaly dataset. contains 5354 high-resolution color and grey images of different texture and object categories.*
+<img src="image/mvtec-results.png">
+
+* **BTAD Dataset** - *Consists of high resolution 1.8K RGB images of industrial products.*
+<img src="image/btad-results.png">
+
+# Ablation
+* *Choice of number of Gaussian’s in the mixture model is justified with increasing number of Gaussian’s.*
+* *PRO Score first increases and then becomes constant*
+## Regularization
+* *Gaussian noise has been added to the encoded features from the transformer for regularization.* 
+* *With Noise added the PRO score is 0.897 in contrary to 0.807 without noise.*
+
+# Train (Command Line)
+` python train.py -p "hazelnut" `
+
+# Cite
+```
+@article{mishra2021vt,
+  title={VT-ADL: A Vision Transformer Network for Image Anomaly Detection and Localization},
+  author={Mishra, Pankaj and Verk, Riccardo and Fornasier, Daniele and Piciarelli, Claudio and Foresti, Gian Luca},
+  journal={arXiv preprint arXiv:2104.10036},
+  year={2021}
+}
+```
