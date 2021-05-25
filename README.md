@@ -1,6 +1,8 @@
 # VT-ADL : A Vision Transformer Network for Image Anomaly Detection and Localization
 *Authors - Pankaj Mishra, Ricardo Verk, Daniele Fornasier, Claudio Piciarelli, Gian Luca Foresti*
 
+<img src="image/bt_anomaly_dataset.png">
+
 **Abstract**- *We present a transformer-based image anomaly detection and localization network. Our proposed model is
 a combination of a reconstruction-based approach and patch embedding. The use of transformer networks helps preserving
 the spatial information of the embedded patches, which is later processed by a Gaussian mixture density network to localize the
@@ -8,12 +10,12 @@ anomalous areas. In addition, we also publish BTAD, a real-world industrial anom
 state-of-the-art algorithms using publicly available datasets like MNIST and MVTec.*
 
 # Network
-The network is inspired from the [Vision Transformer](https://openreview.net/pdf?id=YicbFdNTTy). It adapt the trasnformer network
-for the image anomaly detection and localization.
+The network is inspired from [Vision Transformer](https://openreview.net/pdf?id=YicbFdNTTy). It adapts the trasnformer network
+for image anomaly detection and localization.
 <img src="image/Ano-VT.png">
 
 # Novel Dataset
-Dataset contains RGB images of three industrial products – [Scan Below to download](http://avires.dimi.uniud.it/papers/btad/btad.zip)
+Dataset contains RGB images of three industrial products – [Scan to download](http://avires.dimi.uniud.it/papers/btad/btad.zip)
 <img src="image/btad-QR.png">
 
 * Product 1 :  Contains 400 images of 1600x1600 pixels
@@ -22,7 +24,7 @@ Dataset contains RGB images of three industrial products – [Scan Below to down
 
 # Results
 * **MVTec Dataset** - *Real world anomaly dataset. contains 5354 high-resolution color and grey images of different texture and object categories.*
-<img src="image/mvtec-results.png">
+<img src="image/mvtec_predicted.png">
 
 * **BTAD Dataset** - *Consists of high resolution 1.8K RGB images of industrial products.*
 <img src="image/btad-results.png">
