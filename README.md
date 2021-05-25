@@ -32,6 +32,8 @@ Dataset contains RGB images of three industrial products – [Scan to download](
 # Ablation
 * *Choice of number of Gaussian’s in the mixture model is justified with increasing number of Gaussian’s.*
 * *PRO Score first increases and then becomes constant*
+<img src="image/no-of-gaus-ablation.png">
+
 ## Regularization
 * *Gaussian noise has been added to the encoded features from the transformer for regularization.* 
 * *With Noise added the PRO score is 0.897 in contrary to 0.807 without noise.*
