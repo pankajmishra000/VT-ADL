@@ -42,11 +42,26 @@ Dataset contains RGB images of three industrial products – [Scan to download](
 ` python train.py -p "hazelnut" `
 
 # Cite
+If you use this dataset, please cite it using the following reference:
+ 
 ```
-@article{mishra2021vt,
-  title={VT-ADL: A Vision Transformer Network for Image Anomaly Detection and Localization},
-  author={Mishra, Pankaj and Verk, Riccardo and Fornasier, Daniele and Piciarelli, Claudio and Foresti, Gian Luca},
-  journal={arXiv preprint arXiv:2104.10036},
-  year={2021}
-}
+P. Mishra, R. Verk, D. Fornasier, C. Piciarelli, G.L. Foresti
+"VT-ADL: A Vision Transformer Network for Image Anomaly Detection and Localization"
+30th IEEE/IES International Symposium on Industrial Electronics (ISIE)
+Kyoto, Japan, June 20-23, 2021
+```
+
+BibTeX:
+```
+
+@inproceedings{
+
+        mishra21-vt-adl,
+        author = {Mishra, Pankaj and Verk, Riccardo and Fornasier, Daniele and Piciarelli, Claudio and Foresti, Gian Luca},
+        title = {{VT-ADL}: A Vision Transformer Network for Image Anomaly Detection and Localization},
+        booktitle = {30th IEEE/IES International Symposium on Industrial Electronics (ISIE)},
+        year = {2021},
+        month = {June},
+        location = {Kyoto, Japan}
+	}
 ```
