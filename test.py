@@ -17,7 +17,7 @@ import mdn1
 from VT_AE import VT_AE as ae
 from utility_fun import *
 
-prdt = "hazelnut"
+prdt = "cable"
 patch_size = 64
 
 ssim_loss = pytorch_ssim.SSIM() # SSIM Loss
@@ -110,7 +110,7 @@ def Thresholding(data_load = loader[1:], upsample = 1, thres_type = 0, fpr_thres
     return threshold
     
 
-def Patch_Overlap_Score(data_load = loader[1:], threshold = thres, upsample =1):
+def Patch_Overlap_Score(threshold, data_load = loader[1:], upsample =1):
     
     norm_loss_t = []
     normalised_score_t = []
@@ -205,7 +205,7 @@ def Patch_Overlap_Score(data_load = loader[1:], threshold = thres, upsample =1):
 if __name__=="__main__":
     
     thres = Thresholding()
-    PRO, AUC, AUC_PR = Patch_Overlap_Score()
+    PRO, AUC, AUC_PR = Patch_Overlap_Score(threshold=thres)
 
     print(f'PRO Score: {PRO} \nAUC Total: {AUC} \nPR_AUC Total: {AUC_PR}')
 
