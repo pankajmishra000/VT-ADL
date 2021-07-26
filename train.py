@@ -60,6 +60,8 @@ for i in range(epoch):
     t_loss = []
     
     for j, m in data.train_loader:
+        if j.size(1)==1:
+            j = torch.stack([j,j,j]).squeeze(2).permute(1,0,2,3)
         model.zero_grad()
         
         # vector,pi, mu, sigma, reconstructions = model(j.cuda())
