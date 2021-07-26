@@ -68,6 +68,8 @@ def Thresholding(data_load = loader[1:], upsample = 1, thres_type = 0, fpr_thres
 
     for data in data_load:
         for i, j in data:
+            if i.size(1)==1:
+                i = torch.stack([i,i,i]).squeeze(2).permute(1,0,2,3)
             vector, reconstructions = model(i.cuda())
             pi, mu, sigma = G_estimate(vector)
             
@@ -129,6 +131,8 @@ def Patch_Overlap_Score(threshold, data_load = loader[1:], upsample =1):
     for n,data in enumerate(data_load):
         total_loss_all = []
         for c,(i, j) in enumerate(data):
+            if i.size(1)==1:
+                i = torch.stack([i,i,i]).squeeze(2).permute(1,0,2,3)
             vector, reconstructions = model(i.cuda())
             pi, mu, sigma = G_estimate(vector)
            
