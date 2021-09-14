@@ -15,7 +15,7 @@ for image anomaly detection and localization.
 <img src="image/Ano-VT.png">
 
 # Novel Dataset
-Dataset contains RGB images of three industrial products – [Scan to download](http://avires.dimi.uniud.it/papers/btad/btad.zip)
+Dataset contains RGB images of three industrial products – [Scan to download](https://avires.dimi.uniud.it/papers/btad/btad.zip)
 <img src="image/btad-QR.png">
 
 * Product 1 :  Contains 400 images of 1600x1600 pixels
