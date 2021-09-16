@@ -15,10 +15,8 @@ for image anomaly detection and localization.
 <img src="image/Ano-VT.png">
 
 # BeanTech Anomaly Detection Dataset - BTAD 
-======
-Source: [BeanTech srl](https://www.beantech.it)
-License type: [CC-BY-SA](https://creativecommons.org/licenses/by-sa/4.0/legalcode)
-=======
+###Source: [BeanTech srl](https://www.beantech.it)
+###License type: [CC-BY-SA](https://creativecommons.org/licenses/by-sa/4.0/legalcode)
 
 Dataset contains RGB images of three industrial products – [Scan to download](https://avires.dimi.uniud.it/papers/btad/btad.zip)
 <img src="image/btad-QR.png">
