@@ -14,9 +14,16 @@ The network is inspired from [Vision Transformer](https://openreview.net/pdf?id=
 for image anomaly detection and localization.
 <img src="image/Ano-VT.png">
 
-# Novel Dataset
-Dataset contains RGB images of three industrial products – [Scan to download](http://avires.dimi.uniud.it/papers/btad/btad.zip)
+# BeanTech Anomaly Detection Dataset - BTAD 
+
+Source: BeanTech srl - https://www.beantech.it
+License type: [CC-BY-SA](https://creativecommons.org/licenses/by-sa/4.0/legalcode)
+Dataset contains RGB images of three industrial products – [Scan to download](https://avires.dimi.uniud.it/papers/btad/btad.zip)
 <img src="image/btad-QR.png">
+
+The images are captured from the industrial image acquisition systems and then cropped and log transformation was applied to respect
+privacy policy of the data owner(Beantech). Later pixel precise ground truth has been added by manually annotating the data using commercially
+available annotation tool ["SuperAnnotate"](https://superannotate.com/)
 
 * Product 1 :  Contains 400 images of 1600x1600 pixels
 * Product 2 :  Contains 1000 images of 600x600 pixels
